@@ -11,7 +11,6 @@ add_action( 'wp_enqueue_scripts', function () {
 	// enqueue global assets
 	wp_enqueue_script( 'gsap-js', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js', array(), false, true ) ;
 	wp_enqueue_script( 'gsap-st', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js', array('gsap-js'), false, true );
-	wp_enqueue_script( 'gsap-t', 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/SplitText3.min.js', array('gsap-js'), false, true );
 	wp_enqueue_style( 'locomotive-css', 'https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.1/dist/locomotive-scroll.css', [], false, );
 	wp_enqueue_script( 'locomotive-js', 'https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.1/dist/locomotive-scroll.min.js', array(), false, true );
 
