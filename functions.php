@@ -10,6 +10,7 @@ use MyTheme\CustomPostTypes;
 use MyTheme\CustomTaxonomies;
 use MyTheme\Menus;
 
+
 /*
  * Set up our auto loading class and mapping our namespace to the app directory.
  *
@@ -34,6 +35,8 @@ CustomPostTypes::register();
 CustomTaxonomies::register();
 Menus::register();
 
+
+
 if (!function_exists('lazyblocks')) {
     // Define path and URL to the LZB plugin.
     $my_lzb_path = get_stylesheet_directory() . '/inc/lzb/';
@@ -44,3 +47,6 @@ if (!function_exists('lazyblocks')) {
 
     lazyblocks()->include_within($my_lzb_url);
 }
+
+use MyTheme\CustomBlocks;
+new CustomBlocks();

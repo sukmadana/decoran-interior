@@ -1,0 +1,49 @@
+.portfolio{
+    &__image{
+        @apply relative h-full w-full;
+
+        .image-main{
+            @apply w-6/12 absolute left-1/4 top-0;
+
+            &:after{
+                content: '';
+                display: block;
+                padding-bottom: 128.61%;
+            }
+
+            img{
+                @apply absolute top-0 left-0 h-full w-full object-cover;
+            }
+        }
+
+        .image-second{
+            @apply w-4/12 absolute left-0;
+            bottom: -80px;
+
+            &:after{
+                content: '';
+                display: block;
+                padding-bottom: 112.84%;
+            }
+
+            img{
+                @apply absolute top-0 left-0 h-full w-full object-cover;
+            }
+        }
+
+        .image-third{
+            @apply w-6/12 absolute right-0;
+            bottom: -40px;
+
+            &:after{
+                content: '';
+                display: block;
+                padding-bottom: 64.84%;
+            }
+
+            img{
+                @apply absolute top-0 left-0 h-full w-full object-cover;
+            }
+        }
+    }
+}

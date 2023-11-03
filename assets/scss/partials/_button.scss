@@ -1,0 +1,4 @@
+.btn{
+    @apply px-[24px] py-[16px] rounded-full text-center font-bold text-lg border border-warm-brown text-warm-brown;
+    @apply transition-colors duration-300 ease-linear hover:text-light-white hover:bg-warm-brown;
+}

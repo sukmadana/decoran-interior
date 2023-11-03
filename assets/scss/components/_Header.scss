@@ -1,0 +1,73 @@
+$module: ".header";
+#{$module} {
+  a {
+    &,
+    &:visited {
+      &:hover,
+      &:focus {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.menubar {
+  @apply fixed top-[120px] left-0 w-full bg-white border-dark-grey;
+  z-index: -1;
+  border-top: 1px solid;
+  height: 0;
+  transition: all 400ms cubic-bezier(1,.02,.3,.7);
+  visibility: hidden;
+  overflow: hidden;
+
+  .navbar-active &{
+    height: calc(100vh - 120px);
+    z-index: 40;
+    visibility: visible;
+  }
+
+  .header-menu {
+    .menu-item {
+      padding: 24px 0;
+      position: relative;
+
+      a {
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 2.94px;
+        position: relative;
+        transition: all 400ms ease-out;
+        display: inline-block;
+
+        &::after{
+          content: '';
+          display: block;
+          position: absolute;
+          left: calc(100% + 24px);
+          top: 50%;
+          transform: translateY(-50%);
+          height: 28px;
+          background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="87" height="32" viewBox="0 0 87 32" fill="none"><path d="M2 15.791H85.5M85.5 15.791L68.5 2M85.5 15.791L68.5 30" stroke="%23303030" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: 100%;
+          overflow: hidden;
+          width: 0;
+          opacity: 0;
+          transition: all 400ms ease-in-out;
+        }
+
+        &:hover{
+          // font-weight: 700;
+
+          &::after{
+            width: 85px;
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}

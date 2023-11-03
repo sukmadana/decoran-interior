@@ -18,7 +18,8 @@ if (local.proxy) {
         open: false,
         files: [
             'build/**/*.{css,js}',
-            'templates/**/*.php'
+            'templates/**/*.php',
+            'blocks/**/*.php'
         ]
     });
 }

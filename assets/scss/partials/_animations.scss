@@ -1,5 +1,29 @@
 // Add any custom CSS animation related CSS here
+.image-reveal{
+  visibility: hidden;
+  overflow: hidden;
 
+  img{
+    transform-origin: left;
+  }
+}
+
+
+.text-anim{
+  position: relative;
+  overflow: hidden;
+
+  & > div{
+    position: relative;
+  }
+
+  .split-parent {
+    overflow: hidden;
+  }
+  .split-child {
+    display: inline-block;
+  }
+}
 
 .animation-buzz-out {
   animation-name: buzz-out;

@@ -7,9 +7,6 @@ class Admin {
         add_filter( 'admin_footer_text', '__return_empty_string', 11 );
         add_filter( 'update_footer',     '__return_empty_string', 11 );
         
-
-        // Uncomment to hide the lazyblock menu
-        // add_filter( 'lzb/show_admin_menu', '__return_false' );
     }
 
     public function remove_wp_logo_bar() {

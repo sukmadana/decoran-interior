@@ -1,8 +1,15 @@
 @import "lib/mixins";
 @import "~tailwindcss/base";
 @import "partials/base";
+@import "partials/type";
 @import "partials/animations";
 @import "~tailwindcss/components";
 @import "partials/components";
 @import "~tailwindcss/utilities";
 @import "partials/utilities";
+@import "partials/button";
+
+// Blocks
+@import "blocks/home-banner";
+@import "blocks/services";
+@import "blocks/portfolio";

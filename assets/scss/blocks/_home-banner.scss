@@ -1,0 +1,15 @@
+.homepage-banner{
+    &__image{
+        @apply relative;
+
+        .image-bottom{
+            @apply relative z-10  w-10/12;
+        }
+
+        .image-front{
+            @apply absolute -bottom-10 right-0 w-6/12;
+
+            z-index: 11;
+        }
+    }
+}
