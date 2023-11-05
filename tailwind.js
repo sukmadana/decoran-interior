@@ -21,6 +21,11 @@ module.exports = {
     theme: {
         container: {
             center: true,
+            padding: {
+                DEFAULT: '20px',
+                sm: '20px',
+                lg: '',
+            },
         },
         fontFamily: {
             sans:['"Roboto"', 'sans-serif'],

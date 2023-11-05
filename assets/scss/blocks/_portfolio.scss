@@ -3,7 +3,12 @@
         @apply relative h-full w-full;
 
         .image-main{
-            @apply w-6/12 absolute left-1/4 top-0;
+            
+            @screen md {
+                @apply w-6/12 absolute left-1/4 top-0;
+            }
+
+            @apply relative w-full;
 
             &:after{
                 content: '';
@@ -17,8 +22,12 @@
         }
 
         .image-second{
-            @apply w-4/12 absolute left-0;
-            bottom: -80px;
+            @apply w-full relative bottom-0;
+
+            @screen md {
+                @apply w-4/12 absolute left-0;
+                bottom: -80px;
+            }
 
             &:after{
                 content: '';
@@ -32,8 +41,12 @@
         }
 
         .image-third{
-            @apply w-6/12 absolute right-0;
-            bottom: -40px;
+            @apply w-full relative md:w-6/12 md:absolute right-0;
+            bottom: 0;
+
+            @screen md {
+                bottom: -40px;
+            }
 
             &:after{
                 content: '';
