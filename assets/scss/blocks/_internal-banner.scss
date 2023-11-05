@@ -1,0 +1,81 @@
+.internal-banner {
+
+    .title-text{
+        font-size: 38px;
+        
+        @screen md{
+            font-size: 70px;
+        }
+    }
+
+    .label-text {
+        text-transform: uppercase;
+        position: relative;
+        padding-left: 20px;
+        font-size: 20px;
+        margin-bottom: 16px;
+
+        @screen md{
+            font-size: 28px;
+            font-weight: 400;
+            letter-spacing: 5.04px;
+            padding-left: 91px;
+
+        }
+
+        &::before{
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: #FFFFFF;
+            width: 4px;
+            height: 100%;
+
+            @screen md{
+                width: 75px;
+                height: 4px;
+
+            }
+        }
+    }
+
+    &__content{
+        position: relative;
+        z-index: 11;
+    }
+
+    &__image{
+        position: relative;
+        z-index: 10;
+    }
+
+    .image-bottom,
+    .image-front{
+        @apply w-10/12 inline-block relative;
+
+        &::after{
+            content: '';
+            display: block;
+            padding-bottom: 111.76%;
+        }
+
+        img{
+            @apply absolute top-0 left-0 h-full w-full object-cover;
+        }
+    }
+
+    .image-bottom{
+        left: 0;
+        
+        @screen md {
+            left: -16.666%;
+        }
+    }
+
+    .image-front{
+        margin-top: -50%;
+        margin-left: 50px;
+    }
+}

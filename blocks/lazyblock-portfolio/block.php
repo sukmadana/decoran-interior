@@ -12,17 +12,17 @@
  */
 ?>
 
-<div class="portfolio py-[240px]">
+<div class="portfolio py-[80px] md:py-[240px]">
     <div class="container">
         <div class="flex flex-wrap">
-            <div class="w-full md:w-6/12 flex order-2 md:order-1 py-[120px]">
-                <div class="w-full md:w-10/12">
+            <div class="w-full md:w-6/12 flex md:py-[120px]">
+                <div class="w-full md:w-10/12 mb-16 md:mb-0">
                     <h2 class="mb-[32px] text-warm-brown"><?= $attributes['heading']?></h2>
                     <div class="mb-[58px] subtitle-text text-dark-grey"><?= $attributes['description'] ?></div>
                     <a href="<?= $attributes['button'] ?>" class="btn btn-outline-brown">View More</a>
                 </div>
             </div>
-            <div class="w-full md:w-6/12 flex order-1 md:order-2">
+            <div class="w-full md:w-6/12 flex">
                 <div class="portfolio__image">
                     <?php if ($attributes['image-main']['url']): ?>
                         <div class="image-main image-reveal" data-scroll data-scroll-speed="-1" data-scroll-delay="0.03">
